@@ -1,0 +1,32 @@
+@import "../../utils/variables.module.scss";
+
+.technologies{
+    position: relative;
+    font-family: "portfolio_bold";
+    color: white;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    // padding: 0 5rem;
+    &_icon{
+        width: 18%;
+        margin: 2rem 0;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: bold;
+
+        @include screen_sm{
+            width: 32%;
+        }
+        svg{
+            font-size: 3rem;
+            &:hover{
+                color: $primaryColor;
+            }
+        }
+    }
+}

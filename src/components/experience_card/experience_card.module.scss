@@ -1,0 +1,19 @@
+.experience_card{
+    display: block;
+    max-width: 450px;
+    background-color: #1d1836;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    border-bottom: 3px solid white;
+
+    &__description{
+        font-size: 0.8rem;
+        font-weight: bold;
+    }
+
+    &_list{
+        li{
+            padding: 0 0 0.5rem 0;
+        }
+    }
+}

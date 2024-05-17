@@ -1,0 +1,15 @@
+@import "../../utils/variables.module.scss";
+
+.overview{
+    position: relative;
+    font-family: "portfolio_bold";
+    color: white;
+
+    h2{
+        font-size: 4rem;
+
+        @include screen_sm{
+            font-size: 3rem;
+        }
+    }
+}

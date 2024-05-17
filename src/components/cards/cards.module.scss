@@ -1,0 +1,63 @@
+@import "../../utils/variables.module.scss";
+
+.card{
+    flex-basis: 47%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: $tertiaryColor;
+    border-radius: 20px;
+    // box-shadow: 2px 3px 8px $primaryColor;
+    font-weight: bold;
+    margin: 1rem 0;
+
+    @include screen_sm{
+        flex-basis: 100%;
+    }
+
+    h4{
+        font-weight: bolder;
+        font-size: 1.5rem;
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    &__image{
+        
+        img{
+            border-radius: 20px;
+            border: 2px solid white;
+        }
+    }
+
+    &__description{
+        // font-size: 0.8rem;
+
+        a[href]{
+            color: $primaryColor;
+            text-decoration: underline;
+        }
+    }
+
+    &__footer{
+        font-size: 0.8rem;
+        margin-top: 20px;
+    }
+
+    &__skills{
+        list-style-type: '\0023';
+        display: flex;
+        margin-left: 10px;
+        
+        li{
+            padding-right: 20px;
+            // padding-left: 10px;
+        }
+    }
+
+}

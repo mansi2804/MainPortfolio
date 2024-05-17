@@ -1,0 +1,53 @@
+@import "../../utils/variables.module.scss";
+
+.experience{
+    position: relative;
+    font-family: "portfolio_bold";
+    color: white;
+    // text-align: center;
+
+    h6{
+        color: white;
+    }
+
+    h2{
+        font-size: 4rem;
+
+        @include screen_sm{
+            font-size: 3rem;
+        }
+    }
+
+    .paper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: teal;
+        background: #232946;
+        height: 100%;
+        width: 100%;
+    }
+
+    &_icon{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        background: $tertiaryColor;
+        border-radius: 50%;
+        justify-content: center;
+        vertical-align: middle;
+        border: 2px solid;
+        text-align: center;
+        padding-top: 5px;
+    }
+}
+
+.timeline_item{
+    &:nth-child(2n){
+        div:last-child{
+            display: flex;
+            justify-content: right;
+        }
+    }
+}

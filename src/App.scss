@@ -1,0 +1,148 @@
+@import "./src/utils/variables.module.scss";
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@font-face {
+  font-family: portfolio_regular;
+  src: url(../public/fonts/SpaceGrotesk-Regular.ttf);
+}
+
+@font-face {
+  font-family: portfolio_bold;
+  src: url(../public/fonts/SpaceGrotesk-Bold.ttf);
+}
+
+$primaryColor: #915eff;
+$secondaryColor: #58379e;
+
+* {
+  font-family: portfolio_regular, portfolio_bold, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: portfolio_bold;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #ffffff;
+  transition: background-color 5000s ease-in-out 0s;
+  box-shadow: inset 0 0 45px 45px $tertiaryColor;
+}
+
+.main_color {
+  color: $primaryColor;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.MuiTimelineContent-root {
+  &:nth-child(2n) {
+    justify-content: right;
+  }
+}
+
+.tags {
+  margin: 10px 10px 10px 0;
+  padding: 8px 16px;
+  outline: none;
+  display: inline-block;
+  border-radius: 5px;
+
+  &__repo {
+    background-color: white;
+    color: $primaryColor;
+  }
+
+  &__site {
+    background-color: $primaryColor;
+    color: white;
+  }
+}
+
+.icon_link {
+  &:hover {
+    color: $primaryColor;
+  }
+}
+
+.action-slider {
+  animation: bounce 2s ease infinite;
+}
+
+@keyframes bounce {
+  50% {
+    transform: translateY(1.8rem);
+  }
+}
+
+.error {
+  color: $error;
+}
+
+/* overrides */
+
+@include screen_sm {
+  .MuiTimelineItem-missingOppositeContent::before {
+    flex: 0 !important;
+    padding: 0 !important;
+  }
+
+  .MuiTimeline-root{
+    padding: 0 !important;
+  }
+}
+

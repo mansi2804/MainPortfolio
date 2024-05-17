@@ -1,0 +1,106 @@
+@import "../../utils/variables.module.scss";
+
+.contact{
+    position: relative;
+    font-family: "portfolio_bold";
+    color: white;
+    
+
+    &_body{
+        background-color: $secondaryColor;
+
+    }
+
+    &_body_right{
+        justify-content: center;
+        position: relative;
+        background-color: transparent;
+        position: relative;
+    }
+
+    h2{
+        color: white;
+        // font-size: 4rem;
+    }
+
+    .bg_tertiary{
+        background-color: $tertiaryColor;
+        &:-internal-autofill-selected{
+            background-color: inherit;
+        }
+    }
+
+    &_alert{
+        background-color: black !important;
+        color: $primaryColor !important;
+        position: fixed;
+        top: 5rem;
+        z-index: 5;
+        .MuiAlert-icon{
+            color: $primaryColor;
+        }
+    }
+}
+
+.profile_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+
+    @include screen_lg{
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(0);
+        text-align: left;
+    }
+    img{
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        border: 2px solid white;
+    }
+    h4{
+        display: block;
+    }
+
+    ul{
+        display: flex;
+        margin: 10px 0;
+        justify-content: center;
+        li{
+            margin: 0 5px;
+            width: 2.3rem;
+            height: 2rem;
+            clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+            background-color: $primaryColor;
+            position: relative;
+            transition: transform 400ms ease-in-out 0s;
+
+            &:hover{
+                transform: rotate(360deg);
+            }
+
+            a{
+                color: rgb(255, 255, 255);
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+
+    &__connect{
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+}
