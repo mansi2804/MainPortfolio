@@ -6,7 +6,7 @@ import useScrollToView from '../../utils/hooks/useScrollToView';
 
 const Introduction = () => {
     const text = "Hello, I'm Mansi Patil";
-    const subText = "and this is my portfolio..."
+    const subText = "and I'm delighted to present my professional portfolio, showcasing my expertise and accomplishments in the field"
     const displayText = useTypewriter(text, 100);
     const displaySubText = useTypewriter(subText, 100, 2000)
     const scrollToRef = useScrollToView('overview')
