@@ -2,7 +2,7 @@
   "name": "mansi_portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://vTejass-IIT.github.io/portfolio/",
+  "homepage": "https://mansipatil-portfolio.netlify.app/",
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@emotion/react": "^11.11.1",
