@@ -38,13 +38,13 @@ const Projects = () => {
             description: "I designed and developed a fully functional eCommerce website. The website provides a seamless shopping experience for customers, with features such as product listings, user accounts, shopping cart functionality, secure checkout, and order management. Key Features: Product Catalog, User Authentication, Shopping Cart and Responsive Design.The eCommerce website project demonstrates my ability to conceptualize, design, develop, and deploy scalable and functional web applications. It showcases my technical skills, problem-solving abilities, attention to detail, and understanding of eCommerce best practices",
             technologies: ["HTML5","CSS3","Javascript","UI/UX","Version control"],
             repo: "https://github.com/mansi2804/eCommerce-Website",
-        }
+        },
         {
             heading: "To-do list",
             description: "A Todo List application crafted with React! This dynamic tool boasts a range of features designed to enhance productivity and organization. Users can effortlessly create, remove, and prioritize tasks, while also adding additional notes or descriptions for clarity. With a responsive design, it adapts seamlessly to any device, ensuring a consistent user experience. Leveraging the local storage API, the app restores previously added tasks upon revisiting and operates offline as a Progressive Web App (PWA), enabling users to stay on top of their tasks regardless of internet connectivity.",
             technologies: ["HTML5","CSS3","React.js","Progressive Web Applications","API","Javascript","UI/UX","Version control"],
             repo: "https://github.com/mansi2804/to-do-list",
-        }
+        },
         {
             heading: "Sentiment Analysis",
             description: "Developed a web application for sentiment analysis, allowing users to analyze the sentiment of text input in real-time. Leveraging machine learning models, the tool accurately predicts whether the sentiment is positive or negative and provides visual representations for better understanding.Key Features: Sentiment Analysis: Utilizes machine learning models for accurate sentiment classification. Interactive Visualization: Presents sentiment analysis results through dynamic charts for easy interpretation. User-Friendly Interface: Designed with a clean and intuitive interface for seamless user experience.",
