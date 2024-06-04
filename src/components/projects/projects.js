@@ -53,7 +53,6 @@ const Projects = () => {
         }
     
     ]
-
     return (
         <section id="projects" className={styles.projects}>
             <div className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 justify-left overflow-hidden `}>
