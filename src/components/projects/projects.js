@@ -51,7 +51,6 @@ const Projects = () => {
             technologies: ["HTML","CSS","React.js","Flask","python","Data Visualization","Machine Learning","Javascript","UI/UX","Version control"],
             repo: "https://github.com/mansi2804/Sentiment_Analysis-",
         }
-
     
     ]
 
